@@ -34,7 +34,7 @@
 <template>
     <div class="menu">
 		<div class="menu__search">
-			<input v-model="searchQuery" type="text" class="my-3" placeholder="Title">
+			<input v-model="searchQuery" type="text" class="my-3" placeholder="*Title">
             <input v-model="searchYear" type="number" class="my-3" placeholder="Year">
             <select v-model="searchType" class="select-menu my-3">
                 <option value="" selected disabled>Type</option>

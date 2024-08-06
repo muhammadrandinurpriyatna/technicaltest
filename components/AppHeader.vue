@@ -37,7 +37,7 @@
                         </NuxtLink>
                         <div class="header__actions">
                             <div class="header__search">
-                                <input v-model="searchQuery" type="text" class="mx-3" placeholder="Title">
+                                <input v-model="searchQuery" type="text" class="mx-3" placeholder="*Title">
                                 <input v-model="searchYear" type="number" class="mx-3" placeholder="Year">
                                 <select v-model="searchType" class="select-menu">
                                     <option value="" selected disabled>Type</option>
