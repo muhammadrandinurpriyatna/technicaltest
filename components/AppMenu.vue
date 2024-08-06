@@ -1,8 +1,16 @@
 <template>
     <div class="menu">
-		<form action="#" class="menu__search">
-			<input type="text" placeholder="Search">
-			<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg></button>
-		</form>
+		<div class="menu__search">
+			<input type="text" class="my-3" placeholder="Title">
+			<input type="text" class="my-3" placeholder="Year">
+			<select class="select-menu my-3">
+				<option value="movie">Movie</option>
+				<option value="series">Series</option>
+				<option value="episode">Episode</option>
+			</select>
+			<button class="search_btn my-3">
+                <span>Search</span>
+            </button>
+		</div>
 	</div>
 </template>

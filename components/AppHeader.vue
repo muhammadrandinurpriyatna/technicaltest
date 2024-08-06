@@ -4,14 +4,23 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="header__content">
-						<a href="#" class="header__logo">
+						<NuxtLink to="/" class="header__logo">
 							<img src="/img/logo.svg" alt="logo image">
-						</a>
+						</NuxtLink>
 						<div class="header__actions">
-							<form action="#" class="header__search">
-								<input type="text" placeholder="Search">
-								<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg></button>
-							</form>
+							<div class="header__search">
+								<input type="text" class="mx-3" placeholder="Title">
+								<input type="text" class="mx-3" placeholder="Year">
+								<select class="select-menu">
+									<option value="" selected disabled>Type</option>
+									<option value="movie">Movie</option>
+									<option value="series">Series</option>
+									<option value="episode">Episode</option>
+								</select>
+								<button class="search_btn mx-3">
+									<span>Search</span>
+								</button>
+							</div>
 						</div>
 						<button class="header__btn" type="button">
 							<span></span>
