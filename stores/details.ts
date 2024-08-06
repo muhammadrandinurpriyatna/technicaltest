@@ -39,7 +39,7 @@ export const useDetailsStore = defineStore('detailsStore', {
             this.loading = true;
             try {
                 const apiKey = 'a272881f';
-                const response = await $fetch<ApiResponse>(`http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`);
+                const response = await $fetch<ApiResponse>(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`);
                 this.detailsList = {
                     title: response.Title,
                     genre: response.Genre,

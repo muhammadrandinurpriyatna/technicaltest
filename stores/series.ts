@@ -15,7 +15,7 @@ export const useSeriesStore = defineStore('seriesStore', {
             this.loading = true;
             try {
                 const apiKey = 'a272881f';
-                const response = await $fetch<ApiResponse>(`http://www.omdbapi.com/?s=series&y=2024&page=${page}&apikey=${apiKey}`);
+                const response = await $fetch<ApiResponse>(`https://www.omdbapi.com/?s=series&y=2024&page=${page}&apikey=${apiKey}`);
 
                 if (response.Response === 'True') {
                     if (page === 1) {
